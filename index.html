@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>abdulkadirgungor.online - Yazılımcılık Dünyasına Derinlemesine Bir Bakış</title>
+    <meta name="description" content="Yazılımcılık mesleği, kodlama dünyası, yazılım geliştirme süreçleri, kullanılan teknolojiler, kariyer yolları ve Abdulkadir Güngör hakkında kapsamlı bilgiler sunan abdulkadirgungor.online platformu.">
+    <meta name="keywords" content="yazılımcı, yazılım geliştirme, kodlama, programlama, web geliştirme, mobil uygulama, veri bilimi, yapay zeka, siber güvenlik, Abdulkadir Güngör, teknoloji, kariyer, abdulkadirgungor.online, Abdulkadir Güngör Özgeçmiş, Abdulkadir Güngör CV, Abdulkadir Güngör Github, Abdulkadir Güngör Linkedin, abdulkadirgungor86, abdulkadir-gungor">
+    <meta name="author" content="Abdulkadir Güngör">
+    <link rel="canonical" href="https://abdulkadirgungor.online/" />
+    <style>
+        /* Genel Resetleme ve Temel Stiller */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px; /* Temel font boyutu */
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7; /* Okunabilirliği artırmak için satır aralığı */
+            color: #333;
+            background-color: #f8f9fa; /* Daha açık bir arka plan */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 90%; /* Genişliği yüzdesel yapmak daha esnek */
+            max-width: 1200px;
+            margin: 30px auto; /* Üst/alt boşluk artırıldı */
+            padding: 30px; /* İç boşluk artırıldı */
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Daha yumuşak gölge */
+            border-radius: 10px; /* Daha belirgin köşe yuvarlatma */
+            flex-grow: 1; /* İçeriğin büyümesini sağlar */
+        }
+
+        /* Başlık Stilleri */
+        h1, h2, h3, h4 {
+            color: #212529; /* Koyu gri başlık rengi */
+            margin-bottom: 1em; /* Başlık altı boşluk */
+            line-height: 1.3;
+        }
+
+        h1 {
+            font-size: 2.8rem; /* Responsive birim, biraz daha büyük */
+            text-align: center;
+            color: #0056b3; /* Ana başlık rengi */
+            padding-bottom: 15px;
+            margin-top: 15px;
+            margin-bottom: 1.5em; /* Başlık sonrası boşluk */
+        }
+
+        h2 {
+            font-size: 2rem; /* Responsive birim */
+            margin-top: 2em; /* Bölümler arası boşluk */
+            border-bottom: 2px solid #dee2e6; /* Alt çizgi */
+            padding-bottom: 8px;
+            color: #007bff; /* İkincil başlık rengi */
+        }
+
+        h3 {
+            font-size: 1.6rem; /* Responsive birim */
+            margin-top: 1.5em;
+            color: #17a2b8; /* Üçüncül başlık rengi */
+        }
+
+        /* Paragraf ve Metin Stilleri */
+        p {
+            margin-bottom: 1.2em; /* Paragraflar arası boşluk */
+            text-align: justify;
+            hyphens: auto; /* Gerekirse kelimeleri heceler (tarayıcı desteğine bağlı) */
+        }
+
+        strong {
+            color: #0056b3; /* Vurgu rengi */
+            font-weight: 600; /* Biraz daha kalın */
+        }
+
+        /* Bağlantı Stilleri */
+        a {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s ease, text-decoration 0.3s ease;
+        }
+
+        a:hover, a:focus {
+            color: #004085; /* Hover rengi daha koyu */
+            text-decoration: underline; /* Hover'da alt çizgi */
+        }
+
+        /* Tekrarlayan Link Bloğu Stili */
+        .link-block {
+            display: block; /* Blok element */
+            margin: 1.8em auto; /* Otomatik kenar boşluğu ile ortala, dikey boşluk artırıldı */
+            padding: 20px; /* İç boşluk artırıldı */
+            background-color: #eef7ff; /* Açık mavi arka plan */
+            border: 1px solid #cce5ff; /* Uyumlu kenarlık */
+            border-radius: 8px; /* Köşe yuvarlatma */
+            text-align: center; /* Linkleri ortala */
+            max-width: 95%; /* Çok geniş olmasını engelle */
+        }
+
+        .link-block a {
+            display: inline-block; /* Yan yana */
+            margin: 8px 12px; /* Linkler arası boşluk */
+            padding: 10px 15px; /* Daha büyük tıklama alanı */
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 5px; /* Yuvarlak köşeler */
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            font-size: 0.95rem; /* Font boyutu */
+            border: 1px solid transparent; /* Hover için yer tutucu */
+        }
+
+        .link-block a:hover,
+        .link-block a:focus {
+            background-color: #0056b3; /* Daha koyu hover */
+            color: #ffffff;
+            text-decoration: none;
+            transform: translateY(-2px); /* Hafif yukarı kalkma */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+        }
+
+        /* Liste Stilleri */
+        ul, ol {
+            margin-bottom: 1.2em;
+            padding-left: 40px;
+        }
+
+        li {
+            margin-bottom: 0.6em;
+        }
+
+        /* Footer Stili */
+        footer {
+            text-align: center;
+            padding: 40px 20px; /* Daha fazla dikey boşluk */
+            margin-top: 40px;
+            background-color: #343a40; /* Koyu footer arka planı */
+            color: #dee2e6; /* Açık gri metin rengi */
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            margin-bottom: 1em;
+            color: #f8f9fa; /* Footer paragraf rengi daha açık */
+            text-align: center; /* Footer'da metin ortalı */
+        }
+
+        footer .link-block { /* Footer içindeki link bloğu */
+             background-color: #495057; /* Biraz daha açık koyu arka plan */
+             border-color: #6c757d;
+             margin-top: 1.5em;
+             margin-bottom: 1.5em;
+        }
+
+         footer .link-block a {
+            background-color: #007bff; /* Footer linkleri için ana renk */
+         }
+
+         footer .link-block a:hover,
+         footer .link-block a:focus {
+            background-color: #0056b3;
+         }
+
+        footer a { /* Footer içindeki genel linkler */
+            color: #adb5bd;
+        }
+
+        footer a:hover, footer a:focus {
+            color: #f8f9fa;
+        }
+
+        /* Responsive Tasarım (Media Queries) */
+
+        /* Tabletler ve Küçük Masaüstü Bilgisayarlar */
+        @media (max-width: 992px) {
+            .container {
+                width: 95%;
+                padding: 25px;
+            }
+            h1 {
+                font-size: 2.4rem;
+            }
+            h2 {
+                font-size: 1.8rem;
+            }
+            h3 {
+                font-size: 1.5rem;
+            }
+            .link-block a {
+                font-size: 0.9rem;
+                padding: 8px 12px;
+                margin: 6px 10px;
+            }
+        }
+
+        /* Büyük Telefonlar ve Küçük Tabletler */
+        @media (max-width: 768px) {
+            html {
+                font-size: 15px; /* Mobil için temel font */
+            }
+            .container {
+                width: 100%;
+                margin-top: 0;
+                margin-bottom: 0;
+                padding: 20px;
+                border-radius: 0; /* Tam ekran genişliği */
+                box-shadow: none;
+            }
+            h1 {
+                font-size: 2.1rem;
+            }
+            h2 {
+                font-size: 1.7rem;
+            }
+            h3 {
+                font-size: 1.4rem;
+            }
+            p {
+                text-align: left; /* Mobil için sola yasla */
+                hyphens: none; /* Mobilde heceleme sorun yaratabilir */
+            }
+            .link-block {
+                text-align: center; /* Linkleri ortala */
+                padding: 15px;
+            }
+            .link-block a {
+                display: block; /* Linkleri alt alta göster */
+                margin: 10px auto; /* Dikey boşluk ve ortalama */
+                width: 90%; /* Genişliği ayarla */
+                max-width: 300px; /* Maksimum genişlik */
+                text-align: center;
+            }
+            footer {
+                padding: 30px 15px;
+                font-size: 0.88rem;
+            }
+             footer .link-block a {
+                 width: 90%; /* Footer linkleri de blok */
+                 max-width: 300px;
+             }
+        }
+
+        /* Küçük Telefonlar */
+        @media (max-width: 480px) {
+            html {
+                font-size: 14px; /* Daha küçük ekranlar için font */
+            }
+             body {
+                 line-height: 1.6; /* Küçük ekranda satır aralığı */
+             }
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.9rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+            h3 {
+                font-size: 1.3rem;
+            }
+            .link-block a {
+                 padding: 12px 15px; /* Mobil için tıklama alanını büyüt */
+                 font-size: 0.95rem; /* Okunabilirliği artır */
+                 margin: 8px auto;
+            }
+             footer {
+                 padding: 25px 10px;
+             }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>abdulkadirgungor.online: Yazılımcılık Dünyasına Derinlemesine Bir Bakış</h1>
+        </header>
+
+        <main>
+            <section>
+                <h2>Yazılımcılık Nedir? Dijital Dünyanın Temel Taşı</h2>
+                <p>
+                    Yazılımcılık, modern dünyanın görünmez ama vazgeçilmez bir gücüdür. Bilgisayarlara, akıllı telefonlara ve sayısız
+                    diğer cihaza ne yapacaklarını söyleyen talimatlar dizisi olan yazılımları tasarlama, geliştirme, test etme
+                    ve sürdürme sanatıdır. Hayatımızın her anına dokunan teknolojilerin arkasındaki beyin gücünü yazılımcılar oluşturur.
+                    Bankacılık işlemlerinden sosyal medyaya, ulaşımdan eğlenceye kadar her alanda yazılımın etkisi büyüktür. Bu
+                    disiplin, mantıksal düşünme, problem çözme yeteneği ve sürekli öğrenme arzusunu bir araya getirir. Bir
+                    yazılımcı, soyut fikirleri ve ihtiyaçları, elle tutulur, çalışan dijital çözümlere dönüştüren bir yaratıcıdır.
+                    <span class="link-block">
+                        <a href="https://abdulkadirgungor86.github.io/cv/" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Özgeçmiş (CV)</a>
+                        <a href="https://abdulkadirgungor86.github.io" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör</a>
+                        <a href="https://abdulkadirgungor.com" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör</a>
+                        <a href="https://github.com/abdulkadirgungor86" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Github abdulkadirgungor86</a>
+                        <a href="https://github.com/abdulkadir-gungor" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Github abdulkadir-gungor</a>
+                        <a href="https://www.linkedin.com/in/abdulkadir-güngör" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Linkedin</a>
+                    </span>
+                    Temelde yazılımcılık, bir problemi anlamak ve bu probleme teknolojik bir çözüm üretmektir. Bu süreç,
+                    kullanıcı ihtiyaçlarını analiz etmekle başlar, ardından çözümün mimarisini tasarlamak, kodu yazmak, yazılımı
+                    kapsamlı bir şekilde test etmek ve son olarak kullanıcıların hizmetine sunmakla devam eder. Yazılım
+                    geliştirme sadece kod yazmaktan ibaret değildir; aynı zamanda planlama, iletişim, işbirliği ve dokümantasyon
+                    gibi birçok farklı beceriyi de gerektirir. Teknoloji dünyası sürekli değiştiği için, yazılımcıların da
+                    yeni programlama dillerini, araçları ve metodolojileri öğrenerek kendilerini sürekli güncel tutmaları şarttır. Bu
+                    dinamik yapı, mesleği zorlu ama bir o kadar da heyecan verici kılar. Her proje yeni bir öğrenme fırsatıdır.
+                </p>
+                <p>
+                    Yazılımcılar, farklı programlama dilleri kullanarak bilgisayarlara komut verirler. Python, Java, C++, C#, JavaScript,
+                    Kotlin, Swift gibi diller, farklı uygulama alanlarına yönelik çözümler sunar. Örneğin, web sitelerinin
+                    görünür yüzünü (frontend) oluşturmak için HTML, CSS ve JavaScript kullanılırken, sunucu tarafı işlemleri (backend)
+                    için Python, Java veya Node.js tercih edilebilir. Mobil uygulamalar için Swift (iOS) ve Kotlin
+                    (Android) öne çıkar.
+                    <span class="link-block">
+                        <a href="https://abdulkadirgungor86.github.io/cv/" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Özgeçmiş (CV)</a>
+                        <a href="https://abdulkadirgungor86.github.io" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör</a>
+                        <a href="https://abdulkadirgungor.com" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör</a>
+                        <a href="https://github.com/abdulkadirgungor86" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Github abdulkadirgungor86</a>
+                        <a href="https://github.com/abdulkadir-gungor" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Github abdulkadir-gungor</a>
+                        <a href="https://www.linkedin.com/in/abdulkadir-güngör" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Linkedin</a>
+                    </span>
+                    Bir yazılımcının araç çantasında sadece programlama dilleri yoktur; aynı zamanda
+                    algoritmalar ve veri yapıları hakkında derinlemesine bilgi sahibi olması gerekir. Algoritmalar, belirli bir
+                    problemi çözmek için izlenen adımları tanımlarken, veri yapıları bilginin bilgisayar belleğinde nasıl verimli
+                    bir şekilde saklanacağını ve işleneceğini belirler. Doğru algoritma ve veri yapısı seçimi, yazılımın
+                    hızını, verimliliğini ve ölçeklenebilirliğini doğrudan etkiler. Bu nedenle, teorik bilgisayar bilimi temelleri, pratik
+                    kodlama becerileri kadar önemlidir. İyi bir yazılımcı, sadece çalışan değil, aynı zamanda optimize edilmiş
+                    ve sürdürülebilir kod yazmayı hedefler. Kod kalitesi uzun vadede büyük fark yaratır. Temiz kod yazmak esastır.
+                </p>
+            </section>
+
+            <section>
+                <h2>Yazılım Geliştirme Yaşam Döngüsü (SDLC) ve Metodolojiler</h2>
+                <p>
+                    Başarılı bir yazılım projesi, genellikle iyi tanımlanmış bir süreç izler. Yazılım Geliştirme Yaşam Döngüsü
+                    (Software Development Life Cycle - SDLC), bir yazılım ürününün fikir aşamasından kullanımdan kaldırılmasına kadar
+                    geçirdiği tüm aşamaları kapsayan bir çerçevedir. Bu döngü, projenin karmaşıklığına, ekibin yapısına ve
+                    müşteri gereksinimlerine göre uyarlanabilir. Geleneksel SDLC modelleri genellikle şu temel aşamaları içerir: Planlama,
+                    Analiz, Tasarım, Geliştirme (Kodlama), Test Etme, Dağıtım (Yayınlama) ve Bakım. Her aşama önemlidir.
+                    <span class="link-block">
+                        <a href="https://abdulkadirgungor86.github.io/cv/" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Özgeçmiş (CV)</a>
+                        <a href="https://abdulkadirgungor86.github.io" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör</a>
+                        <a href="https://abdulkadirgungor.com" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör</a>
+                        <a href="https://github.com/abdulkadirgungor86" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Github abdulkadirgungor86</a>
+                        <a href="https://github.com/abdulkadir-gungor" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Github abdulkadir-gungor</a>
+                        <a href="https://www.linkedin.com/in/abdulkadir-güngör" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Linkedin</a>
+                    </span>
+                    Planlama aşamasında projenin fizibilitesi değerlendirilir, hedefler belirlenir, kapsam tanımlanır ve kaynaklar (zaman, bütçe,
+                    insan gücü) tahsis edilir. Analiz aşamasında, kullanıcıların ve paydaşların ihtiyaçları detaylı bir şekilde
+                    toplanır, incelenir ve belgelenir. Bu 'gereksinim analizi', projenin neyi başarması gerektiğini netleştirir. Tasarım
+                    aşamasında ise yazılımın mimarisi, veri tabanı yapısı, kullanıcı arayüzü (UI) ve kullanıcı deneyimi
+                    (UX) planlanır. Teknik özellikler ve sistemin nasıl çalışacağı bu aşamada belirlenir. İyi bir tasarım kritiktir.
+                    Geliştirme (kodlama) aşaması, tasarımın gerçek koda dönüştürüldüğü yerdir. Yazılımcılar seçilen programlama dillerini kullanarak modülleri oluşturur.
+                </p>
+                <p>
+                    Test etme, yazılım geliştirme sürecinin ayrılmaz bir parçasıdır. Bu aşamada, yazılan kodun hatalarını
+                    (bug) bulmak, performansını ölçmek ve başlangıçta belirlenen gereksinimleri karşılayıp karşılamadığını doğrulamak için
+                    çeşitli testler (birim testleri, entegrasyon testleri, sistem testleri, kabul testleri vb.) uygulanır. Kalite
+                    güvencesi (QA) ekipleri bu süreçte önemli rol oynar. Testler başarıyla tamamlandıktan sonra, yazılım
+                    Dağıtım (Deployment) aşamasına geçer.
+                    <span class="link-block">
+                        <a href="https://abdulkadirgungor86.github.io/cv/" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Özgeçmiş (CV)</a>
+                        <a href="https://abdulkadirgungor86.github.io" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör</a>
+                        <a href="https://abdulkadirgungor.com" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör</a>
+                        <a href="https://github.com/abdulkadirgungor86" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Github abdulkadirgungor86</a>
+                        <a href="https://github.com/abdulkadir-gungor" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Github abdulkadir-gungor</a>
+                        <a href="https://www.linkedin.com/in/abdulkadir-güngör" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Linkedin</a>
+                    </span>
+                    Yazılım, hedef kullanıcıların erişebileceği ortama (örneğin, web sunucuları,
+                    uygulama mağazaları) yüklenir ve kullanıma açılır. Son aşama olan Bakım, yazılımın yayınlandıktan sonraki
+                    ömrünü kapsar. Bu süreçte hatalar düzeltilir, performans iyileştirmeleri yapılır, güvenlik güncellemeleri uygulanır ve
+                    kullanıcı geri bildirimlerine göre yeni özellikler eklenebilir. Yazılım sürekli evrilen bir üründür. Bu bakım önemlidir.
+                    SDLC'yi yönetmek için farklı metodolojiler geliştirilmiştir. Geleneksel Şelale (Waterfall) modeli, her aşamanın bir
+                    önceki tamamlandıktan sonra başladığı sıralı bir yaklaşım sunar. Ancak bu model, değişen gereksinimlere uyum
+                    sağlamakta zorlanabilir.
+                </p>
+                <p>
+                     Bu nedenle, özellikle dinamik projeler için Çevik (Agile) metodolojiler popülerlik kazanmıştır.
+                    Agile, esnekliği, işbirliğini, hızlı geri bildirimi ve artımlı geliştirmeyi vurgular. Scrum, Kanban,
+                    Extreme Programming (XP) gibi Agile çerçeveleri, projeyi daha küçük, yönetilebilir parçalara ayırarak (sprint'ler
+                    veya iterasyonlar) geliştirme sürecini hızlandırmayı ve müşteri memnuniyetini artırmayı hedefler. Takım içi iletişim
+                    ve sürekli iyileştirme Agile'ın temel prensiplerindendir.
+                    <span class="link-block">
+                        <a href="https://abdulkadirgungor86.github.io/cv/" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Özgeçmiş (CV)</a>
+                        <a href="https://abdulkadirgungor86.github.io" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör</a>
+                        <a href="https://abdulkadirgungor.com" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör</a>
+                        <a href="https://github.com/abdulkadirgungor86" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Github abdulkadirgungor86</a>
+                        <a href="https://github.com/abdulkadir-gungor" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Github abdulkadir-gungor</a>
+                        <a href="https://www.linkedin.com/in/abdulkadir-güngör" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Linkedin</a>
+                    </span>
+                    DevOps (Development ve Operations kelimelerinin birleşimi)
+                    ise yazılım geliştirme (Dev) ve bilgi teknolojileri operasyonları (Ops) arasındaki işbirliğini ve iletişimi
+                    vurgulayan bir kültür ve pratikler bütünüdür. DevOps, otomasyonu (yapılandırma, test, dağıtım süreçlerinde)
+                    teşvik ederek yazılım teslimatını hızlandırmayı, kalitesini artırmayı ve daha güvenilir hale getirmeyi amaçlar.
+                    Sürekli Entegrasyon (CI) ve Sürekli Dağıtım (CD) gibi pratikler DevOps'un temel taşlarıdır. Bu yaklaşım
+                    modern yazılım geliştirme süreçlerinde giderek daha fazla benimsenmektedir. Verimlilik artışı sağlar ve hataları azaltır.
+                    Metodoloji seçimi projenin başarısı için önemlidir. Abdulkadir Güngör gibi deneyimli yazılımcılar bu süreçleri bilir.
+                </p>
+            </section>
+
+            <section>
+                <h2>Yazılımcılıkta Popüler Uzmanlık Alanları</h2>
+                <p>
+                    Yazılımcılık mesleği, teknolojiyle birlikte sürekli genişleyen ve çeşitlenen bir alandır. Bir yazılımcı, kariyerinin
+                    farklı noktalarında belirli alanlarda uzmanlaşmayı seçebilir. Bu uzmanlık alanları, farklı beceri setleri, teknolojiler
+                    ve kariyer yolları sunar. İşte günümüzün en popüler ve talep gören yazılımcılık uzmanlık alanlarından
+                    bazıları: Web Geliştirme, Mobil Uygulama Geliştirme, Veri Bilimi ve Yapay Zeka, Oyun Geliştirme, Gömülü
+                    Sistemler ve Siber Güvenlik. Her alan kendi içinde derinleşme imkanı sunar. Seçim kişisel ilgiye bağlıdır.
+                    <span class="link-block">
+                        <a href="https://abdulkadirgungor86.github.io/cv/" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Özgeçmiş (CV)</a>
+                        <a href="https://abdulkadirgungor86.github.io" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör</a>
+                        <a href="https://abdulkadirgungor.com" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör</a>
+                        <a href="https://github.com/abdulkadirgungor86" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Github abdulkadirgungor86</a>
+                        <a href="https://github.com/abdulkadir-gungor" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Github abdulkadir-gungor</a>
+                        <a href="https://www.linkedin.com/in/abdulkadir-güngör" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Linkedin</a>
+                    </span>
+                    <strong>Web Geliştirme:</strong> İnternetin temelini oluşturan web siteleri ve web uygulamalarının geliştirilmesidir. Bu alan genellikle
+                    iki ana dala ayrılır: Frontend (Ön Yüz) ve Backend (Arka Yüz). Frontend geliştiriciler, kullanıcıların
+                    doğrudan etkileşimde bulunduğu arayüzleri (UI) tasarlar ve kodlar. HTML (yapı), CSS (stil) ve
+                    JavaScript (etkileşim) bu alanın temel taşlarıdır. React, Angular, Vue.js gibi modern JavaScript kütüphaneleri
+                    ve framework'leri, karmaşık ve dinamik arayüzler oluşturmayı kolaylaştırır. Kullanıcı deneyimi (UX) tasarımı da
+                    frontend geliştirmenin önemli bir parçasıdır. İyi bir arayüz, kullanıcı memnuniyetini doğrudan etkiler ve önemlidir.
+                </p>
+                <p>
+                    Backend geliştiriciler ise uygulamanın perde arkasındaki mantığını oluştururlar. Sunucu yönetimi, veritabanı işlemleri, kullanıcı
+                    doğrulama, API (Uygulama Programlama Arayüzü) geliştirme gibi görevler backend geliştiricilerin sorumluluğundadır. Popüler backend
+                    teknolojileri arasında Node.js (JavaScript), Python (Django, Flask), Java (Spring), Ruby (Rails), PHP (Laravel)
+                    ve .NET (C#) bulunur. Veritabanı sistemleri (SQL - PostgreSQL, MySQL; NoSQL - MongoDB, Redis)
+                    bilgisi de backend için kritiktir.
+                    <span class="link-block">
+                        <a href="https://abdulkadirgungor86.github.io/cv/" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Özgeçmiş (CV)</a>
+                        <a href="https://abdulkadirgungor86.github.io" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör</a>
+                        <a href="https://abdulkadirgungor.com" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör</a>
+                        <a href="https://github.com/abdulkadirgungor86" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Github abdulkadirgungor86</a>
+                        <a href="https://github.com/abdulkadir-gungor" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Github abdulkadir-gungor</a>
+                        <a href="https://www.linkedin.com/in/abdulkadir-güngör" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Linkedin</a>
+                    </span>
+                    Güvenlik, performans ve ölçeklenebilirlik backend geliştirmenin temel
+                    odak noktalarıdır. Full-stack geliştiriciler ise hem frontend hem de backend teknolojilerine hakim olan ve
+                    bir web uygulamasının tüm katmanlarında çalışabilen çok yönlü profesyonellerdir. Bu geniş bilgi birikimi değerlidir.
+                    <strong>Mobil Uygulama Geliştirme:</strong> Günümüzün mobil öncelikli dünyasında, akıllı telefonlar ve tabletler için uygulamalar geliştirmek
+                    büyük önem taşımaktadır. Mobil geliştirme temel olarak iki platforma odaklanır: iOS (Apple) ve Android
+                    (Google). iOS için genellikle Swift veya Objective-C dilleri kullanılırken, Android için Kotlin veya Java
+                    tercih edilir. Bu yaklaşıma 'native' (platforma özgü) geliştirme denir ve en iyi performansı sunar.
+                </p>
+                <p>
+                    Alternatif olarak, 'cross-platform' (çoklu platform) geliştirme araçları da mevcuttur. React Native (JavaScript tabanlı)
+                    ve Flutter (Dart tabanlı) gibi framework'ler, tek bir kod tabanı yazarak hem iOS hem de
+                    Android için uygulama çıktısı almayı sağlar. Bu, geliştirme süresini ve maliyetini azaltabilir ancak bazen
+                    native uygulamaların performansına veya özellik erişimine tam olarak ulaşamayabilir. Mobil geliştiriciler, farklı ekran
+                    boyutlarına uyum (responsive design), cihaz özelliklerine (kamera, GPS, sensörler) erişim, push bildirimleri, çevrimdışı
+                    çalışma ve uygulama mağazası (App Store, Google Play) yayınlama süreçleri gibi konularla ilgilenirler.
+                    <span class="link-block">
+                        <a href="https://abdulkadirgungor86.github.io/cv/" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Özgeçmiş (CV)</a>
+                        <a href="https://abdulkadirgungor86.github.io" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör</a>
+                        <a href="https://abdulkadirgungor.com" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör</a>
+                        <a href="https://github.com/abdulkadirgungor86" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Github abdulkadirgungor86</a>
+                        <a href="https://github.com/abdulkadir-gungor" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Github abdulkadir-gungor</a>
+                        <a href="https://www.linkedin.com/in/abdulkadir-güngör" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Linkedin</a>
+                    </span>
+                    Mobil kullanıcı deneyimi (Mobile UX) tasarımı, başarılı bir mobil uygulama için hayati önem taşır. Kolay kullanım şarttır.
+                    <strong>Veri Bilimi ve Makine Öğrenmesi (AI/ML):</strong> Verinin yeni petrol olarak kabul edildiği çağımızda, veri
+                    bilimi ve yapay zeka/makine öğrenmesi alanları hızla büyümektedir. Veri bilimciler, büyük ve karmaşık veri
+                    setlerinden (Big Data) anlamlı bilgiler çıkarmak, eğilimleri analiz etmek, desenleri keşfetmek ve geleceğe yönelik
+                    tahminlerde bulunmak için istatistiksel yöntemler, algoritmalar ve programlama becerilerini kullanırlar. Python, bu alanda
+                    Pandas (veri işleme), NumPy (sayısal hesaplama), Matplotlib/Seaborn (veri görselleştirme) ve Scikit-learn (makine öğrenmesi)
+                    gibi güçlü kütüphaneleri sayesinde en popüler dildir. R dili de istatistiksel analiz için yaygın kullanılır.
+                </p>
+                 <p>
+                    Makine öğrenmesi mühendisleri, bilgisayarların veriden öğrenmesini sağlayan algoritmalar geliştirir ve uygularlar. Sınıflandırma (örneğin,
+                    spam e-posta tespiti), regresyon (örneğin, ev fiyatı tahmini), kümeleme (örneğin, müşteri segmentasyonu) gibi
+                    farklı makine öğrenmesi görevleri vardır. Derin öğrenme (Deep Learning), özellikle yapay sinir ağları
+                    kullanarak görüntü tanıma, doğal dil işleme (NLP) gibi karmaşık problemlerde büyük başarılar elde etmiştir.
+                    TensorFlow ve PyTorch, derin öğrenme için en popüler framework'lerdir.
+                    <span class="link-block">
+                        <a href="https://abdulkadirgungor86.github.io/cv/" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Özgeçmiş (CV)</a>
+                        <a href="https://abdulkadirgungor86.github.io" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör</a>
+                        <a href="https://abdulkadirgungor.com" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör</a>
+                        <a href="https://github.com/abdulkadirgungor86" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Github abdulkadirgungor86</a>
+                        <a href="https://github.com/abdulkadir-gungor" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Github abdulkadir-gungor</a>
+                        <a href="https://www.linkedin.com/in/abdulkadir-güngör" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Linkedin</a>
+                    </span>
+                    Bu alan, güçlü analitik düşünme,
+                    matematik ve istatistik bilgisi gerektirir. Veriye dayalı karar verme süreçlerini destekler ve inovasyon yaratır.
+                    <strong>Oyun Geliştirme:</strong> Eğlence endüstrisinin en büyük kollarından biri olan video oyunları sektörü, yetenekli oyun
+                    geliştiricilere sürekli ihtiyaç duyar. Oyun geliştirme, yaratıcılık ve teknik uzmanlığın birleştiği multidisipliner bir
+                    alandır. Oyun geliştiriciler, oyunun mekaniklerini (kurallar, etkileşimler), grafiklerini (2D/3D modelleme, animasyon), fizik
+                    motorunu (gerçekçi hareketler), yapay zekasını (NPC davranışları) ve ses tasarımını hayata geçirirler. Unity (C#
+                    ile) ve Unreal Engine (C++ ile) gibi güçlü oyun motorları, geliştirme sürecini önemli ölçüde kolaylaştırır.
+                 </p>
+                 <p>
+                    Bu motorlar, hazır bileşenler, görsel editörler ve platformlar arası dağıtım yetenekleri sunar. Oyun geliştirme
+                    sadece kodlamadan ibaret değildir; aynı zamanda oyun tasarımı, seviye tasarımı, hikaye anlatımı ve sanat
+                    yönetimi gibi farklı rolleri de içerir. Başarılı bir oyun, teknik mükemmelliğin yanı sıra sürükleyici
+                    bir deneyim ve eğlenceli bir oynanış sunmalıdır. Takım çalışması ve iletişim, genellikle büyük oyun
+                    projelerinde kritik öneme sahiptir. Bu dinamik sektörde sürekli yeni teknolojiler ve trendler ortaya çıkar.
+                    <span class="link-block">
+                        <a href="https://abdulkadirgungor86.github.io/cv/" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Özgeçmiş (CV)</a>
+                        <a href="https://abdulkadirgungor86.github.io" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör</a>
+                        <a href="https://abdulkadirgungor.com" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör</a>
+                        <a href="https://github.com/abdulkadirgungor86" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Github abdulkadirgungor86</a>
+                        <a href="https://github.com/abdulkadir-gungor" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Github abdulkadir-gungor</a>
+                        <a href="https://www.linkedin.com/in/abdulkadir-güngör" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Linkedin</a>
+                    </span>
+                    <strong>Gömülü Sistemler (Embedded Systems):</strong> Gömülü sistem yazılımcılığı, belirli bir işlevi yerine getirmek üzere tasarlanmış özel
+                    donanımlar (mikrodenetleyiciler, mikroişlemciler) üzerinde çalışan yazılımları geliştirmeyi içerir. Çamaşır makinelerinden otomobillerin kontrol
+                    ünitelerine, tıbbi cihazlardan endüstriyel robotlara kadar sayısız cihaz gömülü sistemler kullanır. Bu alanda
+                    çalışan yazılımcılar genellikle C ve C++ gibi donanıma yakın, performans odaklı dilleri tercih ederler.
+                    Kaynak kısıtlamaları (sınırlı bellek, düşük işlem gücü, enerji tüketimi) gömülü sistem geliştirmenin temel
+                    zorluklarındandır. Yazılımın son derece güvenilir, verimli ve gerçek zamanlı (real-time) çalışması gerekebilir. Donanım
+                    bilgisi ve donanım-yazılım etkileşimini anlamak bu alanda önemlidir. Nesnelerin İnterneti (IoT) trendiyle birlikte,
+                    internete bağlanabilen gömülü cihazların sayısı arttıkça bu uzmanlık alanı daha da önem kazanmaktadır.
+                </p>
+                <p>
+                    <strong>Siber Güvenlik:</strong> Dijitalleşmenin artmasıyla birlikte siber tehditler de çeşitlenmekte ve artmaktadır. Siber güvenlik
+                    uzmanları, yazılımları, bilgisayar sistemlerini, ağları ve verileri yetkisiz erişime, saldırılara ve hasara
+                    karşı korumak için çalışırlar. Bu alan, savunma (güvenlik duvarı yapılandırma, erişim kontrolü, şifreleme)
+                    ve saldırı (güvenlik açıklarını bulmak için sızma testleri - penetration testing) perspektiflerini içerir.
+                    Güvenli kodlama pratikleri geliştirmek, güvenlik politikaları oluşturmak, olay müdahalesi (incident response) planları hazırlamak
+                    ve güvenlik denetimleri yapmak siber güvenlik profesyonellerinin görevleri arasındadır.
+                    <span class="link-block">
+                        <a href="https://abdulkadirgungor86.github.io/cv/" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Özgeçmiş (CV)</a>
+                        <a href="https://abdulkadirgungor86.github.io" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör</a>
+                        <a href="https://abdulkadirgungor.com" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör</a>
+                        <a href="https://github.com/abdulkadirgungor86" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Github abdulkadirgungor86</a>
+                        <a href="https://github.com/abdulkadir-gungor" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Github abdulkadir-gungor</a>
+                        <a href="https://www.linkedin.com/in/abdulkadir-güngör" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Linkedin</a>
+                    </span>
+                    Ağ güvenliği,
+                    uygulama güvenliği, bulut güvenliği, veri güvenliği gibi alt dalları bulunur. Sürekli gelişen tehditlere karşı
+                    tetikte olmayı ve güncel kalmayı gerektiren dinamik bir alandır. Abdulkadir Güngör gibi bilinçli geliştiriciler
+                    güvenliğe önem verir. Bu alanda sürekli öğrenme şarttır ve asla bitmez. Her zaman yeni teknikler çıkar.
+                    Diğer uzmanlık alanları arasında Bulut Bilişim (Cloud Computing - AWS, Azure, GCP), DevOps Mühendisliği,
+                    Blockchain Geliştirme, QA (Kalite Güvence) Mühendisliği ve Teknik Yazarlık gibi dallar da bulunmaktadır.
+                    Seçilecek uzmanlık alanı, kişinin ilgi alanlarına, becerilerine ve kariyer hedeflerine bağlı olarak değişir.
+                </p>
+            </section>
+
+             <section>
+                <h2>Başarılı Bir Yazılımcı Olmak İçin Gereken Beceriler</h2>
+                <p>
+                    Yazılımcılık, sadece kod yazma yeteneğinden çok daha fazlasını gerektiren kapsamlı bir meslektir. Başarılı
+                    bir yazılımcı olmak için hem teknik (hard skills) hem de teknik olmayan (soft skills) becerilere
+                    sahip olmak önemlidir. Bu beceriler, problem çözmeden etkili iletişime kadar geniş bir yelpazeyi kapsar.
+                    Teknik beceriler genellikle öğrenilebilir ve ölçülebilir yeteneklerken, sosyal beceriler kişinin karakteri ve deneyimiyle
+                    şekillenir. Her iki tür beceri de kariyer gelişimi için hayati öneme sahiptir. Dengeli bir gelişim hedeflenmelidir.
+                    <span class="link-block">
+                        <a href="https://abdulkadirgungor86.github.io/cv/" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Özgeçmiş (CV)</a>
+                        <a href="https://abdulkadirgungor86.github.io" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör</a>
+                        <a href="https://abdulkadirgungor.com" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör</a>
+                        <a href="https://github.com/abdulkadirgungor86" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Github abdulkadirgungor86</a>
+                        <a href="https://github.com/abdulkadir-gungor" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Github abdulkadir-gungor</a>
+                        <a href="https://www.linkedin.com/in/abdulkadir-güngör" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Linkedin</a>
+                    </span>
+                    <strong>Teknik Beceriler (Hard Skills):</strong> Bunlar, yazılımcının işini yapabilmesi için gereken temel teknik yetkinliklerdir.
+                    <ul>
+                        <li><strong>Programlama Dilleri:</strong> En az bir veya birkaç programlama dilinde (Python, Java, JavaScript, C#, C++, Kotlin, Swift vb.) yetkinlik.</li>
+                        <li><strong>Algoritmalar ve Veri Yapıları:</strong> Verimli ve optimize kod yazabilmek için sağlam bir teorik temel. Problemleri çözmek için doğru yaklaşımları bilmek.</li>
+                        <li><strong>Veritabanı Yönetimi:</strong> SQL (PostgreSQL, MySQL, SQL Server) ve/veya NoSQL (MongoDB, Cassandra, Redis) veritabanlarını anlama, sorgulama ve tasarlama becerisi.</li>
+                        <li><strong>İşletim Sistemleri:</strong> Linux, Windows, macOS gibi işletim sistemlerinin temellerini ve komut satırını kullanabilme.</li>
+                        <li><strong>Versiyon Kontrol Sistemleri:</strong> Git gibi araçları kullanarak kod değişikliklerini takip etme, işbirliği yapma ve sürüm yönetimi. GitHub, GitLab gibi platformlar.</li>
+                        <li><strong>Web Teknolojileri:</strong> Web geliştirme alanında HTML, CSS, JavaScript ve ilgili framework/kütüphaneler (React, Angular, Vue, Node.js, Django, Spring vb.).</li>
+                        <li><strong>API Geliştirme ve Kullanımı:</strong> RESTful API'ler veya GraphQL gibi API'ları tasarlama, geliştirme ve entegre etme becerisi.</li>
+                        <li><strong>Test Otomasyonu:</strong> Yazılım kalitesini sağlamak için birim testleri, entegrasyon testleri yazma ve otomasyon araçlarını kullanma (JUnit, pytest, Selenium vb.).</li>
+                        <li><strong>Bulut Bilişim Platformları:</strong> AWS, Azure, Google Cloud gibi bulut servislerini anlama ve kullanabilme (temel düzeyde bile olsa).</li>
+                        <li><strong>Güvenlik Prensipleri:</strong> Güvenli kodlama pratikleri, yaygın zafiyetler (OWASP Top 10) hakkında bilgi sahibi olma.</li>
+                    </ul>
+                    Bu liste sürekli güncellenir, yeni teknolojiler çıktıkça öğrenilmesi gerekenler de değişir. Abdulkadir Güngör gibi uzmanlar bunu bilir.
+                 </p>
+                <p>
+                    <strong>Sosyal ve Kişisel Beceriler (Soft Skills):</strong> Teknik bilgi kadar önemli olan bu beceriler, yazılımcının
+                    takım içinde ve iş ortamında ne kadar etkili olacağını belirler. Proje başarısında kritik rol oynarlar.
+                    <ul>
+                        <li><strong>Problem Çözme:</strong> Karşılaşılan teknik zorlukları ve hataları analitik bir yaklaşımla anlama, araştırma ve çözme yeteneği. Mantıksal düşünme.</li>
+                        <li><strong>İletişim:</strong> Hem teknik hem de teknik olmayan kişilerle (takım arkadaşları, yöneticiler, müşteriler) fikirleri açık ve net bir şekilde ifade edebilme. Yazılı ve sözlü iletişim.</li>
+                        <li><strong>Takım Çalışması:</strong> Proje hedeflerine ulaşmak için diğer geliştiriciler, tasarımcılar, test uzmanları ve yöneticilerle uyumlu bir şekilde işbirliği yapabilme.</li>
+                        <li><strong>Öğrenme İsteği ve Merak:</strong> Teknoloji sürekli değiştiği için yeni dilleri, araçları ve konseptleri öğrenmeye açık olma ve kendini geliştirme motivasyonu.</li>
+                        <li><strong>Zaman Yönetimi ve Organizasyon:</strong> Görevleri önceliklendirme, teslim tarihlerine uyma ve iş yükünü etkili bir şekilde yönetebilme.</li>
+                        <li><strong>Adaptasyon ve Esneklik:</strong> Değişen proje gereksinimlerine, yeni teknolojilere veya beklenmedik durumlara hızla uyum sağlayabilme.</li>
+                        <li><strong>Detaylara Dikkat:</strong> Kod yazarken, test ederken veya dokümantasyon hazırlarken küçük hataları fark edebilme ve titiz çalışma.</li>
+                        <li><strong>Eleştirel Düşünme:</strong> Farklı çözüm yollarını değerlendirme, varsayımları sorgulama ve en iyi yaklaşımı seçebilme yeteneği.</li>
+                        <li><strong>Sabır ve Azim:</strong> Özellikle karmaşık problemlerle veya zorlu hata ayıklama süreçleriyle uğraşırken pes etmeme ve çözüm bulana kadar devam etme.</li>
+                    </ul>
+                    <span class="link-block">
+                        <a href="https://abdulkadirgungor86.github.io/cv/" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Özgeçmiş (CV)</a>
+                        <a href="https://abdulkadirgungor86.github.io" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör</a>
+                        <a href="https://abdulkadirgungor.com" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör</a>
+                        <a href="https://github.com/abdulkadirgungor86" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Github abdulkadirgungor86</a>
+                        <a href="https://github.com/abdulkadir-gungor" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Github abdulkadir-gungor</a>
+                        <a href="https://www.linkedin.com/in/abdulkadir-güngör" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Linkedin</a>
+                    </span>
+                    Başarılı yazılımcılar, teknik uzmanlıklarını güçlü sosyal becerilerle birleştirerek hem bireysel hem de takım olarak
+                    etkili olurlar. Kariyerlerinde ilerledikçe, liderlik, mentorluk ve stratejik düşünme gibi beceriler de
+                    önem kazanır. Sürekli gelişim, bu dinamik mesleğin anahtarıdır. Bu beceriler zamanla geliştirilir ve pekiştirilir.
+                    Abdulkadir Güngör gibi profesyoneller bu becerilere yatırım yapmanın önemini bilirler ve sürekli kendilerini geliştirirler.
+                </p>
+            </section>
+
+             <section>
+                <h2>Yazılımcının Araç Kutusu: Diller, Framework'ler ve Araçlar</h2>
+                <p>
+                    Bir yazılımcının verimli ve etkili çalışabilmesi için doğru araçları kullanması kritik öneme sahiptir.
+                    Yazılımcının araç kutusu, kullanılan programlama dillerinden, geliştirme süreçlerini hızlandıran framework'lere, kod yazmayı
+                    kolaylaştıran editörlerden, işbirliğini sağlayan versiyon kontrol sistemlerine kadar geniş bir yelpazeyi kapsar.
+                    Teknolojinin hızla gelişmesiyle birlikte bu araçlar da sürekli olarak güncellenmekte ve yenileri ortaya çıkmaktadır.
+                    Doğru araç seçimi projenin türüne, ekibin tercihlerine ve hedeflenen platforma göre değişiklik gösterir. Bu
+                    seçimler önemlidir.
+                    <span class="link-block">
+                        <a href="https://abdulkadirgungor86.github.io/cv/" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Özgeçmiş (CV)</a>
+                        <a href="https://abdulkadirgungor86.github.io" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör</a>
+                        <a href="https://abdulkadirgungor.com" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör</a>
+                        <a href="https://github.com/abdulkadirgungor86" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Github abdulkadirgungor86</a>
+                        <a href="https://github.com/abdulkadir-gungor" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Github abdulkadir-gungor</a>
+                        <a href="https://www.linkedin.com/in/abdulkadir-güngör" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Linkedin</a>
+                    </span>
+                    <strong>Programlama Dilleri:</strong> Yazılımcının temel aracıdır. Her dilin kendine özgü sözdizimi, kullanım alanları ve
+                    güçlü yönleri vardır. Popüler diller arasında şunlar bulunur:
+                    <ul>
+                        <li><strong>Python:</strong> Okunabilirliği yüksek, öğrenmesi kolay, geniş kütüphane desteği (veri bilimi, web geliştirme, otomasyon).</li>
+                        <li><strong>JavaScript:</strong> Web'in dili. Frontend (React, Angular, Vue) ve Backend (Node.js) geliştirmede yaygın. Asenkron yapısı güçlü.</li>
+                        <li><strong>Java:</strong> Platform bağımsızlığı (JVM), kurumsal uygulamalar, Android geliştirme. Güçlü ekosistem.</li>
+                        <li><strong>C#:</strong> Microsoft ekosistemi, .NET framework, Windows uygulamaları, oyun geliştirme (Unity).</li>
+                        <li><strong>C++:</strong> Yüksek performans gerektiren uygulamalar, oyun motorları (Unreal Engine), sistem programlama, gömülü sistemler.</li>
+                        <li><strong>Kotlin:</strong> Modern, Java ile uyumlu, Android geliştirmenin resmi dili. Daha güvenli ve öz.</li>
+                        <li><strong>Swift:</strong> Apple ekosistemi (iOS, macOS, watchOS) için modern ve güvenli dil.</li>
+                        <li><strong>PHP:</strong> Özellikle web geliştirme (WordPress, Laravel) alanında hala yaygın kullanılan betik dili.</li>
+                        <li><strong>Ruby:</strong> Zarif sözdizimi, web geliştirme (Ruby on Rails framework'ü ile popülerleşti).</li>
+                        <li><strong>Go (Golang):</strong> Google tarafından geliştirilen, eş zamanlılık (concurrency) yetenekleri güçlü, bulut tabanlı servisler için popüler.</li>
+                    </ul>
+                     Dil seçimi projenin gereksinimlerine göre yapılır. Birçok yazılımcı birden fazla dil bilir.
+                </p>
+                <p>
+                    <strong>Framework'ler ve Kütüphaneler:</strong> Yazılım geliştirme sürecini hızlandıran, tekrar eden görevleri otomatikleştiren ve belirli
+                    bir yapı sunan kod koleksiyonlarıdır. Framework'ler genellikle uygulamanın iskeletini oluştururken, kütüphaneler belirli
+                    işlevleri yerine getiren modüller sunar.
+                    <ul>
+                        <li><strong>Frontend Framework/Kütüphaneleri:</strong> React, Angular, Vue.js, Svelte (JavaScript).</li>
+                        <li><strong>Backend Framework'leri:</strong> Node.js (Express, NestJS), Python (Django, Flask), Java (Spring Boot), C# (.NET Core), PHP (Laravel, Symfony), Ruby (Rails).</li>
+                        <li><strong>Mobil Geliştirme:</strong> Android SDK, iOS SDK (Native); React Native, Flutter, Xamarin (Cross-platform).</li>
+                        <li><strong>Veri Bilimi/ML Kütüphaneleri:</strong> Pandas, NumPy, Scikit-learn, TensorFlow, PyTorch (Python); tidyverse (R).</li>
+                        <li><strong>Oyun Motorları:</strong> Unity, Unreal Engine.</li>
+                    </ul>
+                    Framework kullanmak, standartlara uygun ve daha hızlı geliştirme yapmayı sağlar. Öğrenme eğrisi olabilir.
+                    <span class="link-block">
+                        <a href="https://abdulkadirgungor86.github.io/cv/" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Özgeçmiş (CV)</a>
+                        <a href="https://abdulkadirgungor86.github.io" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör</a>
+                        <a href="https://abdulkadirgungor.com" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör</a>
+                        <a href="https://github.com/abdulkadirgungor86" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Github abdulkadirgungor86</a>
+                        <a href="https://github.com/abdulkadir-gungor" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Github abdulkadir-gungor</a>
+                        <a href="https://www.linkedin.com/in/abdulkadir-güngör" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Linkedin</a>
+                    </span>
+                    <strong>Entegre Geliştirme Ortamları (IDE'ler) ve Kod Editörleri:</strong> Kod yazmayı, derlemeyi, hata ayıklamayı
+                    (debugging) ve test etmeyi kolaylaştıran yazılımlardır.
+                    <ul>
+                        <li><strong>IDE'ler:</strong> Visual Studio, IntelliJ IDEA (ve PyCharm, WebStorm gibi türevleri), Eclipse, Xcode (Apple). Genellikle dil veya platforma özel daha fazla özellik sunarlar.</li>
+                        <li><strong>Kod Editörleri:</strong> Visual Studio Code (VS Code - çok popüler ve eklentilerle özelleştirilebilir), Sublime Text, Atom, Neovim/Vim, Emacs. Daha hafif ve esnektirler.</li>
+                    </ul>
+                    Seçim, kişisel tercihe ve projenin ihtiyaçlarına bağlıdır. Verimliliği artıran eklentiler önemlidir. Abdulkadir Güngör de bu araçları kullanır.
+                </p>
+                 <p>
+                    <strong>Versiyon Kontrol Sistemleri (VCS):</strong> Kodun zaman içindeki değişikliklerini takip etmek, önceki sürümlere
+                    dönebilmek ve birden fazla geliştiricinin aynı proje üzerinde eş zamanlı çalışmasını sağlamak için kullanılır.
+                    <ul>
+                        <li><strong>Git:</strong> Günümüzde endüstri standardı haline gelmiş dağıtık versiyon kontrol sistemi.</li>
+                        <li><strong>Platformlar:</strong> GitHub, GitLab, Bitbucket gibi platformlar, Git depolarını barındırma, kod inceleme (code review), proje yönetimi ve CI/CD entegrasyonu gibi ek hizmetler sunar.</li>
+                    </ul>
+                    Git kullanımı modern yazılım geliştirmenin temel bir parçasıdır. Her yazılımcının bilmesi gerekir.
+                    <span class="link-block">
+                        <a href="https://abdulkadirgungor86.github.io/cv/" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Özgeçmiş (CV)</a>
+                        <a href="https://abdulkadirgungor86.github.io" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör</a>
+                        <a href="https://abdulkadirgungor.com" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör</a>
+                        <a href="https://github.com/abdulkadirgungor86" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Github abdulkadirgungor86</a>
+                        <a href="https://github.com/abdulkadir-gungor" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Github abdulkadir-gungor</a>
+                        <a href="https://www.linkedin.com/in/abdulkadir-güngör" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Linkedin</a>
+                    </span>
+                    <strong>Diğer Önemli Araçlar:</strong>
+                    <ul>
+                        <li><strong>Paket Yöneticileri:</strong> npm/yarn (JavaScript), pip (Python), Maven/Gradle (Java), NuGet (.NET), Composer (PHP). Kütüphane ve bağımlılıkları yönetirler.</li>
+                        <li><strong>Konteynerleştirme:</strong> Docker, Kubernetes. Uygulamaları ve bağımlılıklarını izole edilmiş ortamlarda (konteynerler) paketlemeyi ve dağıtmayı sağlar. Tutarlılık ve ölçeklenebilirlik sunar.</li>
+                        <li><strong>CI/CD Araçları:</strong> Jenkins, GitLab CI, GitHub Actions, CircleCI. Kod değişikliklerini otomatik olarak derleme, test etme ve dağıtma süreçlerini yönetir.</li>
+                        <li><strong>Proje Yönetimi ve İşbirliği Araçları:</strong> Jira, Trello, Asana, Slack, Microsoft Teams. Görev takibi, iletişim ve ekip koordinasyonunu kolaylaştırır.</li>
+                        <li><strong>Test Araçları:</strong> Selenium, Cypress (Frontend test), JUnit, NUnit, pytest (Birim test), Postman, Insomnia (API test).</li>
+                        <li><strong>Veritabanı Yönetim Araçları:</strong> DBeaver, pgAdmin, MySQL Workbench, MongoDB Compass. Veritabanlarıyla etkileşimi kolaylaştıran arayüzler.</li>
+                    </ul>
+                    Bu araçlar, yazılımcının daha organize, verimli ve işbirlikçi bir şekilde çalışmasına olanak tanır. Teknolojiyi takip etmek önemlidir.
+                 </p>
+             </section>
+
+            <section>
+                <h2>Yazılımcılıkta Kariyer Yolları ve Gelişim</h2>
+                <p>
+                    Yazılımcılık, geniş bir kariyer yelpazesi ve sürekli gelişim fırsatları sunan dinamik bir meslektir.
+                    Kariyerin başlangıcında genellikle 'Junior Yazılımcı' olarak göreve başlanır ve zamanla deneyim kazandıkça,
+                    teknik beceriler geliştikçe ve sorumluluklar arttıkça 'Middle (Orta Seviye)' ve ardından 'Senior (Kıdemli)
+                    Yazılımcı' pozisyonlarına ilerlenir. Bu ilerleme sadece teknik derinlikle değil, aynı zamanda problem çözme,
+                    mentorluk yapma ve daha karmaşık projelerde rol alma becerisiyle de ölçülür. Kariyer yolu kişisel hedeflere göre şekillenir.
+                    <span class="link-block">
+                        <a href="https://abdulkadirgungor86.github.io/cv/" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Özgeçmiş (CV)</a>
+                        <a href="https://abdulkadirgungor86.github.io" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör</a>
+                        <a href="https://abdulkadirgungor.com" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör</a>
+                        <a href="https://github.com/abdulkadirgungor86" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Github abdulkadirgungor86</a>
+                        <a href="https://github.com/abdulkadir-gungor" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Github abdulkadir-gungor</a>
+                        <a href="https://www.linkedin.com/in/abdulkadir-güngör" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Linkedin</a>
+                    </span>
+                    Kıdemli seviyeye ulaştıktan sonra yazılımcılar genellikle iki ana kariyer yolundan birini seçebilirler: Teknik
+                    Uzmanlık Yolu (Individual Contributor - IC) veya Yönetim Yolu (Management Track). Teknik uzmanlık yolunu
+                    seçenler, belirli bir teknoloji veya alanda derinlemesine uzmanlaşmaya devam ederler. 'Principal Engineer', 'Staff
+                    Engineer' veya 'Yazılım Mimarı' gibi unvanlar alarak şirketin en zorlu teknik problemlerini çözmede,
+                    teknoloji stratejilerini belirlemede ve diğer mühendislere teknik liderlik yapmada rol alırlar. Bu yol,
+                    kodlamayı ve teknik problemleri çözmeyi sevenler için idealdir. Derin teknik bilgi ve vizyon gerektirir.
+                </p>
+                <p>
+                    Yönetim yolunu seçenler ise teknik rollerden uzaklaşarak insan yönetimi ve proje yönetimi sorumlulukları
+                    üstlenirler. 'Takım Lideri (Team Lead)', 'Mühendislik Yöneticisi (Engineering Manager)', 'Teknoloji Direktörü (CTO)'
+                    gibi pozisyonlara ilerleyebilirler. Bu roldeki kişiler, mühendislik takımlarını yönetmek, performansı değerlendirmek, işe
+                    alım süreçlerine katılmak, bütçe yönetimi yapmak ve şirketin genel stratejisiyle mühendislik hedeflerini uyumlu
+                    hale getirmek gibi görevler üstlenirler. İyi iletişim, liderlik ve organizasyon becerileri bu yol için
+                    kritiktir. İnsan odaklı bir yaklaşımdır.
+                    <span class="link-block">
+                        <a href="https://abdulkadirgungor86.github.io/cv/" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Özgeçmiş (CV)</a>
+                        <a href="https://abdulkadirgungor86.github.io" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör</a>
+                        <a href="https://abdulkadirgungor.com" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör</a>
+                        <a href="https://github.com/abdulkadirgungor86" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Github abdulkadirgungor86</a>
+                        <a href="https://github.com/abdulkadir-gungor" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Github abdulkadir-gungor</a>
+                        <a href="https://www.linkedin.com/in/abdulkadir-güngör" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Linkedin</a>
+                    </span>
+                    Bunların dışında, yazılımcılar kariyerlerinde farklı yönlere de sapabilirler. Örneğin,
+                    teknik bilgiyi kullanarak 'Ürün Yöneticisi (Product Manager)' olabilir, kullanıcı ihtiyaçlarını anlayıp ürün stratejileri
+                    geliştirebilirler. 'Satış Mühendisi (Sales Engineer)' olarak teknik uzmanlıklarını müşterilere ürünleri anlatmak ve
+                    satış süreçlerini desteklemek için kullanabilirler. 'Developer Advocate' veya 'Technical Evangelist' olarak teknoloji
+                    toplulukları ile etkileşim kurabilir, konferanslarda konuşabilir ve belirli teknolojilerin benimsenmesini teşvik edebilirler.
+                    Kendi işini kurarak 'Girişimci (Entrepreneur)' olmak veya 'Freelance Yazılımcı' olarak bağımsız çalışmak
+                    da popüler seçenekler arasındadır. Kendi projelerini hayata geçirmek heyecan vericidir. Abdulkadir Güngör'ün çeşitli
+                    projeleri bulunmaktadır.
+                </p>
+                 <p>
+                    Kariyer gelişimi sadece unvanlarla sınırlı değildir. Sürekli öğrenme, yazılımcılık kariyerinin temel bir parçasıdır.
+                    Yeni teknolojileri takip etmek, online kurslar almak, kitaplar okumak, konferanslara ve meetup'lara katılmak,
+                    açık kaynak projelere katkıda bulunmak ve kişisel projeler geliştirmek, becerileri güncel tutmanın ve
+                    kariyerde ilerlemenin anahtarlarıdır. Bir portföy oluşturmak (örneğin GitHub üzerinde projeleri sergilemek) ve
+                    profesyonel ağ (networking) oluşturmak da (örneğin LinkedIn üzerinden) kariyer fırsatları yakalamak için önemlidir.
+                    Mentorluk almak veya mentorluk yapmak da hem kişisel hem de profesyonel gelişim için değerli deneyimlerdir.
+                    <span class="link-block">
+                        <a href="https://abdulkadirgungor86.github.io/cv/" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Özgeçmiş (CV)</a>
+                        <a href="https://abdulkadirgungor86.github.io" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör</a>
+                        <a href="https://abdulkadirgungor.com" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör</a>
+                        <a href="https://github.com/abdulkadirgungor86" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Github abdulkadirgungor86</a>
+                        <a href="https://github.com/abdulkadir-gungor" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Github abdulkadir-gungor</a>
+                        <a href="https://www.linkedin.com/in/abdulkadir-güngör" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Linkedin</a>
+                    </span>
+                    Yazılımcılık, zorlukları olsa da entelektüel tatmin sağlayan, yaratıcılığa olanak tanıyan ve genellikle iyi
+                    maddi olanaklar sunan bir meslektir. Doğru planlama, sürekli öğrenme ve adaptasyon ile uzun ve
+                    başarılı bir kariyer inşa etmek mümkündür. Her yazılımcının kendi yolunu çizme potansiyeli vardır. Önemli
+                    olan tutkuyu kaybetmemek ve gelişime açık olmaktır. Bu sürekli bir yolculuktur ve sabır gerektirir.
+                    Abdulkadir Güngör de bu yolda ilerleyen bir profesyoneldir, özgeçmişi ve projeleri incelenebilir.
+                 </p>
+            </section>
+
+             <section>
+                <h2>Yazılımcılığın Geleceği ve Trendler</h2>
+                <p>
+                    Teknoloji dünyası baş döndürücü bir hızla değişiyor ve yazılımcılık da bu değişimin merkezinde yer
+                    alıyor. Gelecekte yazılımcıları nelerin beklediğini ve hangi trendlerin öne çıkacağını anlamak, kariyerini
+                    bu alanda şekillendirmek isteyenler için büyük önem taşıyor. Yapay zeka, bulut bilişim, büyük veri,
+                    nesnelerin interneti (IoT) ve siber güvenlik gibi alanlardaki gelişmeler, yazılım geliştirme pratiklerini ve yazılımcılardan
+                    beklenen becerileri sürekli olarak yeniden tanımlıyor. Geleceğe hazırlıklı olmak adaptasyon gerektirir. Bu değişim kaçınılmazdır.
+                    <span class="link-block">
+                        <a href="https://abdulkadirgungor86.github.io/cv/" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Özgeçmiş (CV)</a>
+                        <a href="https://abdulkadirgungor86.github.io" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör</a>
+                        <a href="https://abdulkadirgungor.com" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör</a>
+                        <a href="https://github.com/abdulkadirgungor86" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Github abdulkadirgungor86</a>
+                        <a href="https://github.com/abdulkadir-gungor" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Github abdulkadir-gungor</a>
+                        <a href="https://www.linkedin.com/in/abdulkadir-güngör" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Linkedin</a>
+                    </span>
+                    <strong>Yapay Zeka (AI) ve Makine Öğrenmesi (ML) Entegrasyonu:</strong> AI ve ML, artık sadece belirli
+                    bir uzmanlık alanı olmaktan çıkıp, birçok yazılım uygulamasının temel bir parçası haline geliyor. Gelecekte
+                    yazılımcıların, AI/ML modellerini uygulamalarına entegre etme, AI destekli araçları (örneğin, kod tamamlama,
+                    hata ayıklama için AI asistanları) kullanma ve hatta temel AI/ML prensiplerini anlama becerilerine sahip
+                    olmaları beklenecek. Özellikle doğal dil işleme (NLP), bilgisayarlı görü (Computer Vision) ve otomasyon
+                    alanlarında AI'ın etkisi artarak devam edecek. AI, yazılımcının verimliliğini artırabilecek bir araçtır. Etik konular önemlidir.
+                </p>
+                <p>
+                    <strong>Bulut Bilişim (Cloud Computing) Hakimiyeti:</strong> Uygulamaların geliştirilmesi, dağıtılması ve çalıştırılması giderek daha fazla
+                    bulut platformlarına (AWS, Azure, GCP) kayıyor. Yazılımcıların, bulut servislerini (sunucusuz bilişim - serverless,
+                    konteyner orkestrasyonu - Kubernetes, yönetilen veritabanları vb.) anlama ve etkili bir şekilde kullanma
+                    becerisi giderek daha önemli hale geliyor. Bulut-native (cloud-native) uygulamalar geliştirmek, mikroservis mimarilerini
+                    anlamak ve Infrastructure as Code (IaC) gibi pratikler yaygınlaşacak. Ölçeklenebilirlik ve esneklik sağlar.
+                    <span class="link-block">
+                        <a href="https://abdulkadirgungor86.github.io/cv/" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Özgeçmiş (CV)</a>
+                        <a href="https://abdulkadirgungor86.github.io" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör</a>
+                        <a href="https://abdulkadirgungor.com" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör</a>
+                        <a href="https://github.com/abdulkadirgungor86" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Github abdulkadirgungor86</a>
+                        <a href="https://github.com/abdulkadir-gungor" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Github abdulkadir-gungor</a>
+                        <a href="https://www.linkedin.com/in/abdulkadir-güngör" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Linkedin</a>
+                    </span>
+                    <strong>Düşük Kod/Kodsuz (Low-Code/No-Code) Platformların Yükselişi:</strong> Bu platformlar, geleneksel kodlama bilgisi olmadan veya çok
+                    az kod yazarak uygulama geliştirmeyi mümkün kılıyor. Bu durum, yazılımcıların işsiz kalacağı anlamına gelmese
+                    de, yazılımcıların rolünü değiştirebilir. Yazılımcılar, daha karmaşık problemlerle uğraşmaya, bu platformları genişletmeye
+                    veya entegre etmeye odaklanabilirler. Ayrıca, bu platformlar prototiplemeyi hızlandırabilir ve basit iş uygulamalarının
+                    daha hızlı geliştirilmesini sağlayabilir. Yazılımcıların değeri daha stratejik görevlere kayabilir. Bu platformlar destekleyicidir.
+                    Abdulkadir Güngör gibi profesyoneller bu platformları da takip etmektedir. Geleceği anlamak önemlidir.
+                 </p>
+                 <p>
+                    <strong>Siber Güvenliğin Artan Önemi:</strong> Siber saldırıların artması ve daha sofistike hale gelmesiyle birlikte,
+                    güvenlik artık yazılım geliştirme sürecinin sonradan düşünülen bir adımı değil, en başından itibaren
+                    entegre edilmesi gereken bir unsur haline geliyor. Güvenli kodlama pratikleri (Secure SDLC), DevSecOps
+                    yaklaşımı ve güvenlik testleri standart hale gelecek. Tüm yazılımcıların temel güvenlik prensiplerini bilmesi
+                    ve uygulaması beklenecek. Güvenlik, herkesin sorumluluğu haline geliyor. Veri gizliliği düzenlemeleri de (GDPR, KVKK vb.) önemlidir.
+                    <span class="link-block">
+                        <a href="https://abdulkadirgungor86.github.io/cv/" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Özgeçmiş (CV)</a>
+                        <a href="https://abdulkadirgungor86.github.io" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör</a>
+                        <a href="https://abdulkadirgungor.com" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör</a>
+                        <a href="https://github.com/abdulkadirgungor86" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Github abdulkadirgungor86</a>
+                        <a href="https://github.com/abdulkadir-gungor" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Github abdulkadir-gungor</a>
+                        <a href="https://www.linkedin.com/in/abdulkadir-güngör" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Linkedin</a>
+                    </span>
+                    <strong>Nesnelerin İnterneti (IoT) ve Edge Computing:</strong> Birbirine bağlı cihazların sayısındaki artış, IoT platformları
+                    ve uygulamaları geliştiren yazılımcılara olan talebi artırıyor. Veriyi kaynağında işleyen Edge Computing
+                    (Sınır Bilişim) konsepti de önem kazanıyor. Bu alandaki yazılımcıların gömülü sistemler, ağ protokolleri,
+                    veri yönetimi ve güvenlik konularında bilgili olması gerekiyor. Cihazların yönetimi ve veri akışı kritiktir.
+                    <strong>İlerici Web Uygulamaları (PWA) ve Cross-Platform Geliştirme:</strong> Kullanıcılara mobil uygulama benzeri deneyimler sunan
+                    PWA'lar popülerliğini koruyor. Aynı zamanda Flutter ve React Native gibi cross-platform araçları, geliştirme
+                    süreçlerini optimize etme potansiyeliyle ilgi görmeye devam ediyor. Yazılımcıların farklı platformlara yönelik
+                    çözümler üretebilme yeteneği değerli olmaya devam edecek. Platform bağımsız çözümler talep görmektedir.
+                 </p>
+                  <p>
+                    <strong>Yazılım Geliştirmede Etik ve Sorumluluk:</strong> Teknoloji hayatımızın her alanına daha fazla nüfuz ettikçe,
+                    yazılımcıların geliştirdikleri ürünlerin toplumsal etkileri konusundaki sorumlulukları da artıyor. Algoritmik önyargı, veri
+                    gizliliği, erişilebilirlik (accessibility) ve sürdürülebilirlik gibi etik konular, yazılım geliştirme süreçlerinin önemli
+                    bir parçası haline gelecek. Yazılımcıların sadece teknik olarak değil, etik olarak da bilinçli olması
+                    beklenecek. Toplumsal fayda gözetilmelidir. Abdulkadir Güngör de bu bilinçle hareket etmektedir. Önemli bir konudur.
+                    <span class="link-block">
+                        <a href="https://abdulkadirgungor86.github.io/cv/" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Özgeçmiş (CV)</a>
+                        <a href="https://abdulkadirgungor86.github.io" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör</a>
+                        <a href="https://abdulkadirgungor.com" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör</a>
+                        <a href="https://github.com/abdulkadirgungor86" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Github abdulkadirgungor86</a>
+                        <a href="https://github.com/abdulkadir-gungor" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Github abdulkadir-gungor</a>
+                        <a href="https://www.linkedin.com/in/abdulkadir-güngör" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Linkedin</a>
+                    </span>
+                    Sonuç olarak, yazılımcılığın geleceği parlak görünmekle birlikte, sürekli öğrenme ve adaptasyon gerektiriyor. Belirli
+                    teknolojiler gelip geçse de, problem çözme, mantıksal düşünme, öğrenme yeteneği ve işbirliği gibi
+                    temel beceriler her zaman değerli olmaya devam edecek. Değişime ayak uyduran ve kendini sürekli
+                    geliştiren yazılımcılar, geleceğin teknoloji dünyasında da önemli roller üstlenmeye devam edeceklerdir. Bu dinamik
+                    alan her zaman yeni fırsatlar sunacaktır. Tutku ve merak bu yolculukta en iyi rehberlerdir. Gelecek yazılımla şekillenecektir.
+                 </p>
+            </section>
+
+        </main>
+    </div>
+
+    <footer>
+        <p>
+            abdulkadirgungor.online - Yazılımcılık ve Teknoloji Dünyasına Açılan Kapınız. Bu platform, yazılım geliştirme süreçleri,
+            kariyer yolları ve teknolojik trendler hakkında bilgi sunmayı amaçlamaktadır. Yazılımcılık, sürekli öğrenmeyi gerektiren dinamik
+            bir alandır.
+             <span class="link-block">
+                <a href="https://abdulkadirgungor86.github.io/cv/" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Özgeçmiş (CV)</a>
+                <a href="https://abdulkadirgungor86.github.io" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör</a>
+                <a href="https://abdulkadirgungor.com" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör</a>
+                <a href="https://github.com/abdulkadirgungor86" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Github abdulkadirgungor86</a>
+                <a href="https://github.com/abdulkadir-gungor" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Github abdulkadir-gungor</a>
+                <a href="https://www.linkedin.com/in/abdulkadir-güngör" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Linkedin</a>
+            </span>
+            Abdulkadir Güngör'ün deneyimleri ve projeleri hakkında daha fazla bilgi için yukarıdaki bağlantıları
+            ziyaret edebilirsiniz. Teknolojiyle kalın ve öğrenmeye devam edin, çünkü gelecek dijital dünyada şekilleniyor. Bu
+            yolculukta size rehberlik etmekten mutluluk duyarız. Sorularınız için iletişim kurmaktan çekinmeyin. Başarılar dileriz!
+            Yazılım dünyası keşfedilmeyi bekliyor.
+             <span class="link-block">
+                <a href="https://abdulkadirgungor86.github.io/cv/" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Özgeçmiş (CV)</a>
+                <a href="https://abdulkadirgungor86.github.io" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör</a>
+                <a href="https://abdulkadirgungor.com" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör</a>
+                <a href="https://github.com/abdulkadirgungor86" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Github abdulkadirgungor86</a>
+                <a href="https://github.com/abdulkadir-gungor" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Github abdulkadir-gungor</a>
+                <a href="https://www.linkedin.com/in/abdulkadir-güngör" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Linkedin</a>
+            </span>
+            Abdulkadir Güngör tarafından hazırlanmıştır. Tüm hakları saklıdır. © 2024
+        </p>
+         <p>Yazar: <a href="https://abdulkadirgungor.com" target="_blank" rel="noopener noreferrer author">Abdulkadir Güngör</a></p>
+         <p>
+            Kaynaklar ve daha fazla bilgi için <a href="https://github.com/abdulkadirgungor86" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Github abdulkadirgungor86</a> ve
+            <a href="https://github.com/abdulkadir-gungor" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Github abdulkadir-gungor</a> profillerini inceleyebilirsiniz. Profesyonel ağ için
+            <a href="https://www.linkedin.com/in/abdulkadir-güngör" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Linkedin</a> hesabını takip edebilirsiniz.
+            <span class="link-block">
+                <a href="https://abdulkadirgungor86.github.io/cv/" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Özgeçmiş (CV)</a>
+                <a href="https://abdulkadirgungor86.github.io" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör</a>
+                <a href="https://abdulkadirgungor.com" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör</a>
+                <a href="https://github.com/abdulkadirgungor86" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Github abdulkadirgungor86</a>
+                <a href="https://github.com/abdulkadir-gungor" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Github abdulkadir-gungor</a>
+                <a href="https://www.linkedin.com/in/abdulkadir-güngör" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Linkedin</a>
+            </span>
+             CV'sine <a href="https://abdulkadirgungor86.github.io/cv/" target="_blank" rel="noopener noreferrer">buradan</a> ulaşabilirsiniz.
+         </p>
+    </footer>
+</body>
+</html>
